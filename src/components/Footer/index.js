@@ -44,7 +44,7 @@ export default class SiteFooter extends Component {
                 </a>
               </div>
               <div className="control">
-                <a className="tags has-addons" href="https://github.com/Wikiki/bulma-accordion">
+                <a className="tags has-addons" href="https://github.com/DalkMania/show-tracker">
                   <span className="tag">View on Github</span>
                   <span className="tag is-dark">
                     <span className="icon">

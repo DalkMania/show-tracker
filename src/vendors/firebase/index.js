@@ -1,17 +1,18 @@
-import firebase from 'firebase/app';
-import 'firebase/auth';
-import 'firebase/database';
+import firebase from 'firebase/app'
+import 'firebase/auth'
+import 'firebase/database'
+import config from '../../config'
 
   // Initialize Firebase
-  const config = {
-    apiKey: 'AIzaSyCsDd5OyGwyK4jwDN0FqOlrAFZP5XjHkns',
-    authDomain: 'tvtrackerapp-e68a2.firebaseapp.com',
-    databaseURL: 'https://tvtrackerapp-e68a2.firebaseio.com',
-    projectId: 'tvtrackerapp-e68a2',
-    storageBucket: '',
-    messagingSenderId: '703545240234',
+  const fbconfig = {
+    apiKey: config.firebase.apiKey,
+    authDomain: config.firebase.authDomain,
+    databaseURL: config.firebase.databaseURL,
+    projectId: config.firebase.projectId,
+    storageBucket: config.firebase.storageBucket,
+    messagingSenderId: config.firebase.messagingSenderId,
   };
-  firebase.initializeApp(config);
+  firebase.initializeApp(fbconfig);
 
 export const provider = new firebase.auth.GoogleAuthProvider();
 export const auth = firebase.auth();
