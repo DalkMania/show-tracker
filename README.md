@@ -12,7 +12,7 @@ Check out the Demo here: [Demo](http://demo.niklasdahlqvist.com/show-tracker).
 ## Installation
 
 * `git clone git@github.com:DalkMania/show-tracker.git`
-* `cd react-redux-firebase-authentication`
+* `cd show-tracker`
 * `npm install or yarn`
 * `npm start or yarn start`
 * visit http://localhost:3000/
