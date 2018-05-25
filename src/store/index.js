@@ -5,13 +5,12 @@ import thunk from 'redux-thunk'
 import createHistory from 'history/createBrowserHistory'
 import rootReducer from '../reducers'
 
-export const history = createHistory({basename: '/show-tracker'})
+export const history = createHistory()
 
 const initialState = {}
 const enhancers = []
 const middleware = [
   thunk,
-  logger,
   routerMiddleware(history)
 ]
 
@@ -21,6 +20,8 @@ if (process.env.NODE_ENV === 'development') {
   if (typeof devToolsExtension === 'function') {
     enhancers.push(devToolsExtension())
   }
+
+  middleware.push(logger)
 }
 
 const composedEnhancers = compose(

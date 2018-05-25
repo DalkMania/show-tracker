@@ -9,7 +9,6 @@
     "@fortawesome/fontawesome-free-solid": "^5.0.13",
     "bulma": "^0.7.1",
     "firebase": "^5.0.2",
-    "gh-pages": "^1.1.0",
     "history": "^4.7.2",
     "moment": "^2.22.1",
     "node-sass-chokidar": "^1.3.0",
@@ -36,8 +35,6 @@
     "build": "npm-run-all build-css build-js",
     "build-js": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   }
 }
