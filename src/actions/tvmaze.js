@@ -14,6 +14,8 @@ export const searchShows = ( name ) => {
       let showsWithPoster= [];
       for (let i = 0; i < body.length; i++) {
         if (body[i].show.image) {
+          body[i].show.image.original = body[i].show.image.original.replace(/^http:\/\//i, 'https://');
+          body[i].show.image.medium = body[i].show.image.medium.replace(/^http:\/\//i, 'https://');
           showsWithPoster.push(body[i]);
         }
       }

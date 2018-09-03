@@ -36,13 +36,13 @@ render() {
     return (
       <div id="app-wrapper">
         <div className="app-site">
+        <SnackBarToast />
           <div className="site-content">
             <SiteHeader />
             <SearchBar />
             <ShowCard />
           </div>
           <SiteFooter />
-          <SnackBarToast />
         </div>
         <MobileNav />
       </div>

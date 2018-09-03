@@ -7,7 +7,7 @@ import App from './containers/App'
 
 render(
   <Provider store={store}>
-    <ConnectedRouter basename={process.env.PUBLIC_URL} history={history}>
+    <ConnectedRouter history={history}>
       <App />
     </ConnectedRouter>
   </Provider>,
