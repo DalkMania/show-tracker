@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import BigCalendar from 'react-big-calendar'
+import { Calendar as BigCalendar } from 'react-big-calendar'
 import moment from 'moment'
 import { connect } from 'react-redux'
 import "react-big-calendar/lib/css/react-big-calendar.css"
